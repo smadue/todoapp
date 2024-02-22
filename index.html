@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--Bootstrap CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <title>Madue Todo App</title>
+  </head>
+  <body>
+    <div class="todo">
+      <div class="todoWrapper">
+        <div class="sideNav">
+          <div class="todoTop">
+            <h3 class="title">Menu</h3>
+            <div class="collapsible">
+              <i class="bi bi-list"></i>
+            </div>
+          </div>
+          <div class="search">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="search" class="searchInput" />
+          </div>
+          <div class="sideMenu">
+            <h4 class="sideMenuHeading">TASKS</h4>
+            <div class="menuItem">
+              <i class="bi bi-chevron-double-right"></i>
+              <span class="menuItemTitle">Upcoming</span>
+              <span class="menuItemCount">12</span>
+            </div>
+            <div class="menuItem">
+              <i class="bi bi-border-style"></i>
+              <span class="menuItemTitle">Today</span>
+              <span class="menuItemCount">5</span>
+            </div>
+            <div class="menuItem">
+              <i class="bi bi-calendar-week"></i>
+              <span class="menuItemTitle">Upcoming</span>
+              <span class="menuItemCount">12</span>
+            </div>
+            <div class="menuItem">
+              <i class="bi bi-pencil-square"></i>
+              <span class="menuItemTitle">Sticky Wall</span>
+              <span class="menuItemCount">12</span>
+            </div>
+          </div>
+
+          <div class="sideMenu">
+            <h4 class="sideMenuHeading">LISTS</h4>
+            <div class="menuItem">
+              <span class="redbar"></span>
+              <span class="menuItemTitle">Personal</span>
+              <span class="menuItemCount">3</span>
+            </div>
+            <div class="menuItem">
+              <span class="bluebar"></span>
+              <span class="menuItemTitle">Work</span>
+              <span class="menuItemCount">6</span>
+            </div>
+            <div class="menuItem">
+              <span class="yellowbar"></span>
+              <span class="menuItemTitle">List 1</span>
+              <span class="menuItemCount">3</span>
+            </div>
+            <div class="menuItem" onclick="handleAddNewList()">
+              <span>+</span>
+              <span>Add New List</span>
+            </div>
+          </div>
+
+          <div class="sideMenu">
+            <h4 class="sideMenuHeading">TAGS</h4>
+            <span class="tag">Tag1</span>
+            <span class="tag">Tag2</span>
+            <span class="tag">+ Add Tag</span>
+          </div>
+
+          <div class="sideNavFooter">
+            <div>
+              <i class="bi bi-sliders"></i>
+              <span>Settings</span>
+            </div>
+            <div>
+              <i class="bi bi-box-arrow-right"></i>
+              <span>Signout</span>
+            </div>
+          </div>
+        </div>
+
+        <!--Main Body-->
+        <div class="mainBody">
+          <div class="mainBodyTop">
+            <h1 class="mainBodyHeader">Today</h1>
+            <h3 class="mainBodyDate">5</h3>
+          </div>
+          <div>
+            <span>+ Add New Task</span>
+          </div>
+        </div>
+
+        <div class="taskBar"></div>
+      </div>
+    </div>
+  </body>
+</html>
