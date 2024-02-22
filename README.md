@@ -1,5 +1,10 @@
 # todoapp
-A project to boost my knowledge of Javascipt after bagging META Javascript Certification. 
+This project is carried out just in order to boost my knowledge of Javascipt after bagging META Javascript Certification. The project commenced on Thursday, 22nd February, 2024 during my final year undergraduate days. 
+<br><br>
+The stacks used in developing this project are:
+- HTML
+- CSS
+- JAVASCRIPT
 <br><br>
 This project inspiration is from behance.net by Ram Chandra Reddy Mandadi https://www.behance.net/ramchamandadi
 <br><br>
