@@ -4,3 +4,122 @@
   color: #313133;
   font-family: "Open Sans", sans-serif;
 }
+.todo {
+  padding: 20px;
+}
+.todoWrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 3fr 2fr;
+  gap: 10px;
+}
+.sideNav {
+  background: #faf9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.todoTop {
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible {
+  cursor: pointer;
+}
+.search {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1.5px solid #808080;
+  border-radius: 10px;
+  padding: 5px;
+}
+.searchInput {
+  width: 150px;
+  border: none;
+  height: 20px;
+  background: none;
+}
+.searchInput:focus {
+  outline: none;
+}
+.sideMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sideMenuHeading {
+  font-size: 12px !important;
+}
+.menuItem {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+.menuItemIcon {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.menuItemIcon i {
+  font-size: 15px;
+  font-weight: 600;
+}
+.menuItemCount {
+  background: #cacaca;
+  padding: 0 6px;
+  font-size: 11px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.redbar {
+  background: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+}
+.bluebar {
+  background: #00ffd1;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+}
+.yellowbar {
+  background: orange;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+}
+.sideMenuTag {
+  display: flex;
+  gap: 5px;
+}
+.sidetag {
+  background: rgb(193, 230, 236);
+  padding: 4px 8px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.taglink {
+  background: #e9e9e9;
+  padding: 4px 8px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.taglink a {
+  text-decoration: none;
+}
+.sideNavFooter {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sideNavFooterItem {
+  display: flex;
+  gap: 20px;
+}

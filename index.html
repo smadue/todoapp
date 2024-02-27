@@ -29,68 +29,84 @@
           </div>
           <div class="search">
             <i class="bi bi-search"></i>
-            <input type="text" placeholder="search" class="searchInput" />
+            <input type="text" placeholder="Search" class="searchInput" />
           </div>
           <div class="sideMenu">
             <h4 class="sideMenuHeading">TASKS</h4>
             <div class="menuItem">
-              <i class="bi bi-chevron-double-right"></i>
-              <span class="menuItemTitle">Upcoming</span>
+              <div class="menuItemIcon">
+                <i class="bi bi-bookmark-fill"></i>
+                <span class="menuItemTitle">Upcoming</span>
+              </div>
               <span class="menuItemCount">12</span>
             </div>
             <div class="menuItem">
-              <i class="bi bi-border-style"></i>
-              <span class="menuItemTitle">Today</span>
+              <div class="menuItemIcon">
+                <i class="bi bi-list-task"></i>
+                <span class="menuItemTitle">Today</span>
+              </div>
               <span class="menuItemCount">5</span>
             </div>
             <div class="menuItem">
-              <i class="bi bi-calendar-week"></i>
-              <span class="menuItemTitle">Upcoming</span>
-              <span class="menuItemCount">12</span>
+              <div class="menuItemIcon">
+                <i class="bi bi-calendar-check-fill"></i>
+                <span class="menuItemTitle">Calendar</span>
+              </div>
             </div>
             <div class="menuItem">
-              <i class="bi bi-pencil-square"></i>
-              <span class="menuItemTitle">Sticky Wall</span>
-              <span class="menuItemCount">12</span>
+              <div class="menuItemIcon">
+                <i class="bi bi-pencil-square"></i>
+                <span class="menuItemTitle">Sticky Wall</span>
+              </div>
             </div>
           </div>
 
           <div class="sideMenu">
             <h4 class="sideMenuHeading">LISTS</h4>
             <div class="menuItem">
-              <span class="redbar"></span>
-              <span class="menuItemTitle">Personal</span>
+              <div class="menuItemIcon">
+                <span class="redbar"></span>
+                <span class="menuItemTitle">Personal</span>
+              </div>
               <span class="menuItemCount">3</span>
             </div>
             <div class="menuItem">
-              <span class="bluebar"></span>
-              <span class="menuItemTitle">Work</span>
+              <div class="menuItemIcon">
+                <span class="bluebar"></span>
+                <span class="menuItemTitle">Work</span>
+              </div>
               <span class="menuItemCount">6</span>
             </div>
             <div class="menuItem">
-              <span class="yellowbar"></span>
-              <span class="menuItemTitle">List 1</span>
+              <div class="menuItemIcon">
+                <span class="yellowbar"></span>
+                <span class="menuItemTitle">List 1</span>
+              </div>
               <span class="menuItemCount">3</span>
             </div>
             <div class="menuItem" onclick="handleAddNewList()">
-              <span>+</span>
-              <span>Add New List</span>
+              <div>
+                <span>+ &nbsp; &nbsp;</span>
+                <span>Add New List</span>
+              </div>
             </div>
           </div>
 
           <div class="sideMenu">
             <h4 class="sideMenuHeading">TAGS</h4>
-            <span class="tag">Tag1</span>
-            <span class="tag">Tag2</span>
-            <span class="tag">+ Add Tag</span>
+            <div class="sideMenuTag">
+              <span class="sidetag">Tag1</span>
+              <span class="sidetag">Tag2</span>
+              <span class="taglink"><a href="#">+ Add Tag</a></span>
+            </div>
           </div>
 
           <div class="sideNavFooter">
-            <div>
+            <div class="sideNavFooterItem">
               <i class="bi bi-sliders"></i>
               <span>Settings</span>
             </div>
-            <div>
+            <div class="sideNavFooterItem">
               <i class="bi bi-box-arrow-right"></i>
               <span>Signout</span>
             </div>
