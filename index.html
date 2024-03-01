@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
+
     <title>Madue Todo App</title>
   </head>
   <body>
@@ -36,27 +37,27 @@
             <div class="menuItem">
               <div class="menuItemIcon">
                 <i class="bi bi-bookmark-fill"></i>
-                <span class="menuItemTitle">Upcoming</span>
+                <a href="#" class="menuItemTitle">Upcoming</a>
               </div>
               <span class="menuItemCount">12</span>
             </div>
             <div class="menuItem">
               <div class="menuItemIcon">
                 <i class="bi bi-list-task"></i>
-                <span class="menuItemTitle">Today</span>
+                <a href="#" class="menuItemTitle">Today</a>
               </div>
               <span class="menuItemCount">5</span>
             </div>
             <div class="menuItem">
               <div class="menuItemIcon">
                 <i class="bi bi-calendar-check-fill"></i>
-                <span class="menuItemTitle">Calendar</span>
+                <a href="#" class="menuItemTitle">Calendar</a>
               </div>
             </div>
             <div class="menuItem">
               <div class="menuItemIcon">
                 <i class="bi bi-pencil-square"></i>
-                <span class="menuItemTitle">Sticky Wall</span>
+                <a href="#" class="menuItemTitle">Sticky Wall</a>
               </div>
             </div>
           </div>
@@ -66,28 +67,28 @@
             <div class="menuItem">
               <div class="menuItemIcon">
                 <span class="redbar"></span>
-                <span class="menuItemTitle">Personal</span>
+                <a href="#" class="menuItemTitle">Personal</a>
               </div>
               <span class="menuItemCount">3</span>
             </div>
             <div class="menuItem">
               <div class="menuItemIcon">
                 <span class="bluebar"></span>
-                <span class="menuItemTitle">Work</span>
+                <a href="#" class="menuItemTitle">Work</a>
               </div>
               <span class="menuItemCount">6</span>
             </div>
             <div class="menuItem">
               <div class="menuItemIcon">
                 <span class="yellowbar"></span>
-                <span class="menuItemTitle">List 1</span>
+                <a href="#" class="menuItemTitle">List 1</a>
               </div>
               <span class="menuItemCount">3</span>
             </div>
             <div class="menuItem" onclick="handleAddNewList()">
               <div>
                 <span>+ &nbsp; &nbsp;</span>
-                <span>Add New List</span>
+                <a href="#" class="menuItemTitle">Add New List</a>
               </div>
             </div>
           </div>
@@ -104,11 +105,11 @@
           <div class="sideNavFooter">
             <div class="sideNavFooterItem">
               <i class="bi bi-sliders"></i>
-              <span>Settings</span>
+              <a href="#" class="menuItemTitle">Settings</a>
             </div>
             <div class="sideNavFooterItem">
               <i class="bi bi-box-arrow-right"></i>
-              <span>Signout</span>
+              <a href="#" class="menuItemTitle">Signout</a>
             </div>
           </div>
         </div>
@@ -117,41 +118,40 @@
         <div class="mainBody">
           <div class="mainBodyTop">
             <h1 class="mainBodyHeader">Today</h1>
-            <h3 class="mainBodyDate">5</h3>
+            <h1 class="mainBodyDate">5</h1>
           </div>
-          <div class="addNewBtn">
-            <span>+ Add New Task</span>
-          </div>
+          <div class="addNewBtn">+ Add New Task</div>
           <div class="todolist">
             <ul>
               <li class="listItem">
                 <input type="checkbox" id="checkbox" />
                 Research content Ideas
-                <i class="bi bi-x"></i>
-                <hr class="listItemhr" />
+                <i class="bi bi-chevron-right"></i>
               </li>
+              <hr class="listItemhr" />
               <li class="listItem">
                 <input type="checkbox" id="checkbox" />
                 Research content Ideas
-                <i class="bi bi-x"></i>
-                <hr class="listItemhr" />
+                <i class="bi bi-chevron-right"></i>
               </li>
+              <hr class="listItemhr" />
               <li class="listItem">
                 <input type="checkbox" id="checkbox" />
                 Research content Ideas
-                <i class="bi bi-x"></i>
-                <hr class="listItemhr" />
+                <i class="bi bi-chevron-right"></i>
               </li>
+              <hr class="listItemhr" />
               <li class="listItem">
                 <input type="checkbox" id="checkbox" />
                 Research content Ideas
-                <i class="bi bi-x"></i>
-                <hr class="listItemhr" />
+                <i class="bi bi-chevron-right"></i>
               </li>
+              <hr class="listItemhr" />
             </ul>
           </div>
         </div>
 
+        <!-- Right taskbar -->
         <div class="taskbar">
           <div class="taskbarWrapper">
             <h1>Task:</h1>
