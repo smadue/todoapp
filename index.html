@@ -154,29 +154,43 @@
         <!-- Right taskbar -->
         <div class="taskbar">
           <div class="taskbarWrapper">
-            <h1>Task:</h1>
-            <input
-              type="text"
-              id="taskbarTitle"
-              placeholder="Input Task Title"
-            />
-            <input type="text" placeholder="Description" id="taskbarDesc" />
+            <h3>Task:</h3>
+            <div class="taskForm">
+              <input
+                type="text"
+                id="taskTitle"
+                placeholder="Input Task Title"
+              />
+              <textarea
+                name=""
+                id="taskDesc"
+                cols="30"
+                rows="5"
+                placeholder="Description"
+              ></textarea>
+            </div>
+
             <div class="taskbarSelect">
-              <span>List</span>
-              <div>
-                <input list="items" />
+              <label for="list1">List</label>
+              <!-- <div>
+                <input list="items" id="list1" />
                 <datalist id="items">
                   <option value="Personal"></option>
                   <option value="Non-Personal"></option>
                   <option value="Guest"></option>
                 </datalist>
+              </div> -->
+              <div>
+                <select name="Item" id="list1">
+                  <option value="1">Personal</option>
+                  <option value="2">Guest</option>
+                  <option value="2">Others</option>
+                </select>
               </div>
             </div>
-            <div class="taskbarSelect">
+            <div class="taskbardate">
               <span>Due date</span>
-              <div>
-                <input type="date" />
-              </div>
+              <input type="date" />
             </div>
             <div class="taskbarTag">
               <span class="tag">#Tag1</span>

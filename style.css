@@ -171,5 +171,74 @@
 
 /* Right Taskbar */
 .taskbar {
-  background: #ebfcffb0;
+  background: #ebfcff;
+  border-radius: 10px;
+}
+.taskbarWrapper {
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+.taskForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.taskForm input {
+  border: 1px solid rgba(128, 128, 128, 0.336);
+  padding: 10px;
+  font-weight: bold;
+  background: #f7feff;
+}
+.taskForm input:focus {
+  outline: none;
+  padding: 10px;
+  font-weight: normal;
+}
+#taskTitle {
+  height: 10px;
+  border-radius: 10px;
+}
+#taskDesc {
+  border-radius: 10px;
+  padding: 10px;
+  background: #f7feff;
+  border: 1px solid rgba(128, 128, 128, 0.336);
+}
+#taskDesc:focus {
+  outline: none;
+}
+.taskbarSelect {
+  margin-top: 10px;
+  display: flex;
+  gap: 45px;
+  display: flex;
+  align-items: center;
+}
+.taskbarSelect label {
+  font-weight: 600;
+}
+#list1 {
+  border: 1px solid rgba(128, 128, 128, 0.336);
+  background: #f7feff;
+  border-radius: 5px;
+  padding: 3px;
+}
+#list1:focus {
+  outline: none;
+}
+.taskbardate {
+  display: flex;
+  gap: 10px;
+}
+.taskbardate span {
+  font-weight: 600;
+}
+.taskbardate input {
+  border: 1px solid rgba(128, 128, 128, 0.336);
+  background: #f7feff;
+  border-radius: 5px;
+  padding: 3px;
 }

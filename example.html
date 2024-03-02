@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoApp</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .container {
+        background: rgb(7, 85, 81);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        gap: 10px;
+      }
+      h2 {
+        color: seashell;
+        margin-bottom: 40px;
+      }
+      input[type="text"] {
+        width: 500px;
+        padding: 10px 20px;
+        border: none;
+        height: 30px;
+        border-radius: 30px;
+        background: seashell;
+      }
+      input:focus {
+        outline: none;
+        color: rgb(43, 42, 42);
+      }
+      button {
+        padding: 10px 30px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: seashell;
+      }
+      p {
+        color: salmon;
+        font-style: italic;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        color: seashell;
+        font-weight: 600;
+        padding: 5px;
+        border-bottom: 2px solid salmon;
+        margin-bottom: 5px;
+      }
+      .delete {
+        float: right;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      span {
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Todo App</h2>
+      <input type="text" id="todoInput" placeholder="Enter your next todo" />
+      <button onclick="addTodo()">Add Todo</button>
+      <p id="note"></p>
+      <ul id="todoList"></ul>
+    </div>
+
+    <script>
+      function addTodo() {
+        let todoInput = document.getElementById("todoInput");
+        let todoList = document.getElementById("todoList");
+
+        if (todoInput.value.trim() === "") {
+          document.getElementById("note").innerHTML = "Please enter a todo!!!";
+          return;
+        }
+
+        let li = document.createElement("li");
+        li.textContent = todoInput.value;
+
+        let deleteBtn = document.createElement("span");
+        deleteBtn.textContent = "❌";
+        deleteBtn.className = "delete";
+        deleteBtn.onclick = () => {
+          todoList.removeChild(li);
+        };
+
+        li.appendChild(deleteBtn);
+        todoList.appendChild(li);
+
+        todoInput.value = "";
+      }
+    </script>
+  </body>
+</html>
