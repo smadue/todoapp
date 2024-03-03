@@ -193,20 +193,27 @@
               <input type="date" />
             </div>
             <div class="taskbarTag">
-              <span class="tag">#Tag1</span>
-              <span class="tag">+ Add Tag</span>
+              <span>Tag</span>
+              <div>
+                <span class="tag">#Tag1</span>
+                <span class="tag">+ Add Tag</span>
+              </div>
             </div>
             <div class="subtask">
               <h3>Subtasks:</h3>
-              <ul>
-                <li>+ Add New Subtask</li>
-                <hr />
-              </ul>
+              <div class="childSubtask">
+                <span onclick="addSubTask()">+ Add New Subtask</span>
+                <ul id="subtask"></ul>
+              </div>
             </div>
 
             <div class="taskBtn">
-              <button type="Submit" class="taskbtnItem">Delete Task</button>
-              <button type="Submit" class="taskbtnItem">Save Changes</button>
+              <button type="Submit" onclick="deleteTodo()" class="deleteTodo">
+                Delete Task
+              </button>
+              <button type="Submit" onclick="addTodo()" class="addTodo">
+                Save Changes
+              </button>
             </div>
           </div>
         </div>
