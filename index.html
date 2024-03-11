@@ -121,9 +121,9 @@
             <h1 class="mainBodyDate">5</h1>
           </div>
           <div class="addNewBtn">+ Add New Task</div>
-          <div class="todolist">
-            <ul>
-              <li class="listItem">
+          <div id="todolist">
+            <ul id="todos">
+              <!-- <li class="listItem">
                 <input type="checkbox" id="checkbox" />
                 Research content Ideas
                 <i class="bi bi-chevron-right"></i>
@@ -146,7 +146,7 @@
                 Research content Ideas
                 <i class="bi bi-chevron-right"></i>
               </li>
-              <hr class="listItemhr" />
+              <hr class="listItemhr" /> -->
             </ul>
           </div>
         </div>
@@ -208,10 +208,10 @@
             </div>
 
             <div class="taskBtn">
-              <button type="Submit" onclick="deleteTodo()" class="deleteTodo">
+              <button type="Submit" onclick="deleteTodo()" id="deleteTodo">
                 Delete Task
               </button>
-              <button type="Submit" onclick="addTodo()" class="addTodo">
+              <button type="Submit" onclick="addTodo()" id="addTodo">
                 Save Changes
               </button>
             </div>

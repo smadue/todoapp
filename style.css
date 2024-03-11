@@ -147,7 +147,7 @@
   border: 2px solid rgba(128, 128, 128, 0.473);
   color: gray;
 }
-.todolist ul {
+#todolist ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -269,7 +269,7 @@
   display: flex;
   gap: 30px;
 }
-.deleteTodo {
+#deleteTodo {
   padding: 10px 30px;
   border: 1px solid #404042;
   background: #ffff;
@@ -277,10 +277,10 @@
   font-weight: 600;
   cursor: pointer;
 }
-.deleteTodo:hover {
+#deleteTodo:hover {
   background: #eeeeee;
 }
-.addTodo {
+#addTodo {
   padding: 10px 30px;
   background: rgb(252, 216, 58);
   border: none;
