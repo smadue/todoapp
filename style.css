@@ -151,8 +151,12 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
+/* #todos {
+  align-items: start;
+  display: flex;
+} */
 .listItem {
   font-weight: 600;
   padding: 0 15px;
@@ -167,6 +171,9 @@
 .listItem i {
   display: flex;
   float: right;
+}
+hr {
+  border: 0.2px solid rgba(180, 180, 180, 0.253);
 }
 
 /* Right Taskbar */
